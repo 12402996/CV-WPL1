@@ -1,0 +1,128 @@
+
+html {
+    scroll-behavior: smooth;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: verdana, helvetica, arial, serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+#header {
+    background: black;
+    height: 7vh;
+
+    & ul {
+        display: flex;
+        list-style-type: none;
+        height: 7vh;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+    }
+}
+
+.introduction {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    padding: 28px;
+
+    & article {
+        padding: 9px;
+        border-radius: 20px;
+        border-style: outset;
+        width: 80%;
+        height: 80%;
+        background: linear-gradient(rgba(255, 255, 255, .7),
+        rgba(255, 255, 255, .7)), url("./assets/thumb16.jpg");
+        background-size: cover;
+    }
+}
+.header_article{
+    display: flex;
+    justify-content: center;
+}
+.header_article{
+    display: flex;
+    justify-content: center;
+
+    & h1 {
+        font-size: 50px;
+        font-family: Papyrus, fantasy;
+        font-weight: 900;
+        background-image: linear-gradient(180deg, black, transparent);
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+}
+.pxl_logo{
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+    border-top: solid 3px darkgray;
+    border-bottom: solid 3px darkgray;
+    align-items: center;
+    height: 40px;
+        & div{
+            display: flex;
+        }
+        & p{
+            font-family: Papyrus, fantasy;
+        }
+}
+.pxl_logo1{
+    height: 4vh;
+}
+.pxl_logo2{
+    height: 4vh;
+}
+.fotocv{
+    display: flex;
+    height: 40vh;
+    padding: 20px;
+    border-radius: 40px;
+}
+.layout_article {
+    columns: 3;
+    display: flex;
+}
+
+
+.footer {
+    background-image: url("assets/footerBackgroundImage.jpg");
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.to_top_image {
+    font-weight: bold;
+    background-image: url("assets/ArrowUpTrgNbvn.png");
+    background-size: contain;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-repeat: no-repeat;
+}
+.to_top {
+    background-color: white;
+    height: 40px;
+    width: 40px;
+}
