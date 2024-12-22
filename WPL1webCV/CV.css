@@ -9,6 +9,10 @@ html {
 }
 body {
     font-family: verdana, helvetica, arial, serif;
+    background-image: url("assets/pexels-markusspiske-1089438.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 a{
@@ -18,6 +22,7 @@ a{
 #header {
     background: black;
     height: 7vh;
+
 
     & ul {
         display: flex;
@@ -110,8 +115,25 @@ a{
     padding: 20px;
     font-family: Papyrus, fantasy;
 }
+.experience {
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
 
+.resume {
+    color: black;
+    margin-bottom: 20px;
+    font-size: 28px;
+    text-align: center;
+}
 
+.workList {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
 
 .footer {
     background-image: url("assets/footerBackgroundImage.jpg");
