@@ -93,11 +93,20 @@ a{
 .pxl_logo2{
     height: 4vh;
 }
-.fotocv{
+.fotocv {
     display: flex;
     height: 40vh;
     padding: 20px;
     border-radius: 40px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.fotocv:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.fotocv:active{
+    box-shadow: none;
+    border: 2px solid lightgreen;
 }
 .layout_article {
     columns: 3;
@@ -258,6 +267,24 @@ tr:nth-child(even){
 .soft-skills-right p {
     font-size: 18px;
     text-align: center;
+}
+.imgtitels{
+    padding-bottom: 85px;
+    display: flex;
+    font-size: 125px;
+    justify-content: center;
+    background-image: linear-gradient(red, blue);
+    color: transparent;
+    background-clip: text;
+}
+
+.list > img {
+    width: 100%;
+    margin-bottom: 1em;
+
+}
+.list{
+    columns: 300px 3;
 }
 .footer {
     background-image: url("assets/footerBackgroundImage.jpg");
