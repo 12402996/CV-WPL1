@@ -312,3 +312,104 @@ tr:nth-child(even){
     height: 40px;
     width: 40px;
 }
+
+@media (max-width: 490px) {
+    body {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #333;
+    }
+
+    .header_article h1 {
+        font-size: 36px;
+    }
+
+    .pxl_logo {
+        align-items: center;
+
+        & p {
+            font-size: 12px;
+            font-family: Papyrus, fantasy;
+            text-align: center;
+        }
+    }
+
+    .pxl_logo img {
+        height: 30px;
+    }
+
+    .fotocv {
+        height: auto;
+        width: 50%;
+    }
+
+    .layout_article {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .collumns {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .experience-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience {
+        width: 90%;
+    }
+
+    .ambafoto {
+        height: 40vh;
+    }
+
+    .template {
+        grid-template-areas:
+            'header'
+            'left'
+            'right';
+        grid-auto-rows: auto;
+    }
+
+    .taal table {
+        display: none;
+    }
+
+    .taal::after {
+        content: "Talen kennis: Nederlands (Uitstekend), Engels (Goed), Turks (Matig)";
+        display: block;
+        padding: 10px;
+        background-color: transparent;
+        border-radius: 10px;
+        color: white;
+        width: 80%;
+    }
+
+    .grid_header-rechts h2 {
+        font-size: 20px;
+    }
+
+    .hard-skills_left, .soft-skills-right {
+        width: 70%;
+        margin: 10px 0;
+        font-size: 16px;
+        height: 20vh;
+
+    }
+.imgtitels{
+    font-size: 70px;
+    padding-top: 50px;
+}
+    .footer {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
+
+    .to_top {
+        margin-top: 10px;
+    }
+}
