@@ -97,7 +97,20 @@ a{
 .layout_article {
     columns: 3;
     display: flex;
+    font-family: Papyrus, fantasy;
 }
+.collumns{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+.titel_section{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-family: Papyrus, fantasy;
+}
+
 
 
 .footer {
