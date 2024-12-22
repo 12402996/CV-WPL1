@@ -108,6 +108,7 @@ a{
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+    margin: 8px;
 }
 .titel_section{
     display: flex;
@@ -115,11 +116,21 @@ a{
     padding: 20px;
     font-family: Papyrus, fantasy;
 }
+.experience-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 .experience {
     margin: 20px;
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
 }
 
 .resume {
@@ -132,7 +143,58 @@ a{
 .workList {
     margin-bottom: 20px;
     padding: 10px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid;
+}
+.role > p {
+    font-weight: bold;
+}
+.company > p{
+    font-style: italic;
+    font-weight: bold;
+}
+.period > p{
+    font-size: 12px;
+}
+.ambafoto{
+    height: 70vh;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 128, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.ambafoto:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 128, 0, 0.3);
+}
+.template {
+    display: grid;
+    height: 65vh;
+    padding: 20px 50px;
+    grid-auto-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        'header header header'
+        'nav main aside'
+        'footer footer footer';
+}
+table{
+    grid-area: header;
+    background-color: transparent;
+    border: 2px solid darkgreen;
+    width: 300px;
+    text-align: center;
+}
+th, td {
+    border: 1px solid darkgreen;
+}
+tr > th:first-child{
+    background-color: silver;
+}
+tr:nth-child(odd){
+    background-color: cyan;
+}
+tr:nth-child(even){
+    background-color: white;
 }
 
 .footer {
